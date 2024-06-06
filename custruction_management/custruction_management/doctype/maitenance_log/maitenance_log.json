@@ -16,7 +16,7 @@
    "fieldname": "assets",
    "fieldtype": "Link",
    "label": "Assets",
-   "options": "Assets"
+   "options": "Asst"
   },
   {
    "fieldname": "maintenance_date",
@@ -42,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-06 12:13:16.456061",
+ "modified": "2024-06-06 15:44:37.033097",
  "modified_by": "Administrator",
  "module": "Custruction Management",
  "name": "Maitenance Log",

@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class Assets(Document):
+class Asst(Document):
 	pass

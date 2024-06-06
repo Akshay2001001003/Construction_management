@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-06-06 16:26:48.885173",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-06-06 16:31:39.050863",
+ "modified_by": "Administrator",
+ "module": "Custruction Management",
+ "name": "Wage Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    wl.worker,\r\n    w.worker_name,  -- Assuming 'worker_name' is the field that holds the actual name of the worker in the 'Worker' DocType\r\n    wl.date,\r\n    wl.hour_worked,\r\n    wl.wage_rate,\r\n    wl.total_wage\r\nFROM\r\n    `tabWage Log` wl\r\nJOIN\r\n    `tabWorker` w ON wl.worker = w.name\r\n",
+ "ref_doctype": "Wage Log",
+ "report_name": "Wage Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

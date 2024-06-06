@@ -5,7 +5,5 @@
 from frappe.model.document import Document
 
 
-class WageLog(Document):
-	def before_save(self):
-	  self.total_wage=self.hour_worked*self.wage_rate
-
+class Expense(Document):
+	pass
