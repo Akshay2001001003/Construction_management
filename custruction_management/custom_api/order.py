@@ -4,10 +4,7 @@ from frappe import _
 @frappe.whitelist(allow_guest=True)
 def create_sales_order_via_rest_api(data):
     try:
-        # Parse JSON data
         data = frappe.parse_json(data)
-
-        # Create Sales Order
         sales_order = frappe.get_doc({
             "doctype": "Sales Order",
             "customer": data.get("customer"),
@@ -21,8 +18,6 @@ def create_sales_order_via_rest_api(data):
                 }
             ]
         })
-
-        # Save Sales Order
         sales_order.insert(ignore_permissions=True)
 
         return {"status": "success", "message": _("Sales Order created successfully")}
